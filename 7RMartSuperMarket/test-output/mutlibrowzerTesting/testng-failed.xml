@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [mutlibrowzerTesting]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="edgeTest(failed)">
+    <parameter name="browzer" value="edge"/>
+    <classes>
+      <class name="testscript.AdduserTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="enterUsenameAndPassword"/>
+        </methods>
+      </class> <!-- testscript.AdduserTest -->
+    </classes>
+  </test> <!-- edgeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="firefoxTest(failed)">
+    <parameter name="browzer" value="firefox"/>
+    <classes>
+      <class name="testscript.AdduserTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="enterUsenameAndPassword"/>
+        </methods>
+      </class> <!-- testscript.AdduserTest -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [mutlibrowzerTesting] -->
